@@ -1,0 +1,85 @@
+You are an expert frontend developer who builds premium single-page personal portfolios.
+
+Create a COMPLETE, modern, dark-themed, visually stunning single-page portfolio website using ONLY HTML, CSS (in separate style.css), and vanilla JavaScript (inside <script> at bottom of index.html). NO frameworks, NO external libraries except CDNs for fonts and icons.
+
+Design style (2026 premium look):
+- Deep dark background (#0a0e17 or similar)
+- Glassmorphism cards: semi-transparent white/rgba bg + backdrop-filter: blur(12px) + subtle border
+- Accent gradient: indigo-violet-cyan (linear-gradient(90deg, #6366f1, #8b5cf6, #06b6d4))
+- Fonts: Google Fonts 'Inter' (body) + 'Outfit' (headings)
+- Icons: Font Awesome 6+ CDN
+- Effects: scroll reveal (Intersection Observer fade-up/slide-in), smooth scroll, hover glow/lift/scale on cards, typing cursor animation, subtle floating gradient orbs in hero (CSS keyframes), active nav indicator
+- Responsive: desktop side nav fixed left, mobile → hamburger top menu, fully mobile-friendly
+- Folder structure & exact paths to use:
+  ├── index.html
+  ├── css/
+  │   └── style.css
+  ├── img/
+  │   ├── MyPhoto.jpeg          ← profile photo (use src="img/MyPhoto.jpeg")
+  │   └── image.png             ← favicon (use <link rel="icon" href="img/image.png">)
+  └── Sultan Muhammad-Resume.pdf     ← CV file (use in download button: href="[YourName]-Resume.pdf" download)
+
+Resume data (replace this entire block with your real resume text/copy-paste):
+
+[Paste your full resume text here — name, bio, contact, experience bullets, skills list, projects with descriptions/tech/links/categories, education, certifications, etc.]
+
+From the resume above, extract and use:
+- Full name
+- Current title/role
+- Short bio / summary (2-4 lines)
+- Location, email, phone
+- LinkedIn & GitHub URLs (if present)
+- Education (degree, uni, year)
+- Experience jobs (title, company, duration, bullets)
+- Skills (group them logically: Frontend, Backend, Database, Tools, etc.)
+- Projects (name, 1-2 line desc, tech stack, GitHub/live link if any, categorize e.g. Full Stack / Frontend / Backend / Real-Time, mark featured if important)
+- Certifications (if any)
+- Any numbers for hero stats (e.g. X+ Projects, Y Years Exp, Z Clients/Certs)
+
+If some data is missing, use reasonable defaults but prefer resume info.
+
+Hero section must have:
+- Availability badge (e.g. "Available for Work" or from resume)
+- Large name (gradient on first name)
+- Typing animation: cycle 3-4 roles (e.g. "Full Stack Developer", "MERN Specialist", "Web Engineer" — create from resume)
+- Short bio
+- 3 CTA buttons: View Projects, Let's Talk (mailto:), Download Resume
+- 4 animated stat counters
+- Glowing circular profile photo (img/MyPhoto.jpeg)
+
+Sections in order:
+1. Loading spinner (full-screen animated ring, hide on load)
+2. Fixed left side nav (icons only + tooltips on hover, logo at top, socials at bottom; mobile hamburger)
+3. Hero
+4. About (bio + info grid)
+5. Experience (vertical timeline cards)
+6. Skills (category cards + skill tag clouds with hover glow)
+7. Projects (filter buttons: All + categories from resume, grid cards with name/desc/tags/link/featured badge, show more if >8)
+8. Education
+9. Certifications (if any)
+10. Contact (info + simple form with basic JS validation + social links)
+11. Footer (© current year + back to top)
+
+JavaScript requirements (all in one <script>):
+- Typing effect (hero roles)
+- Scroll spy / active nav link
+- Intersection Observer for scroll reveals
+- Project filter logic (data-category)
+- Hamburger menu toggle
+- Smooth scroll to sections
+- Hide loader on DOMContentLoaded
+- Form validation (name, email, message required)
+
+CSS:
+- Use :root variables for colors, spacing
+- Custom scrollbar
+- Media queries (desktop >1024, tablet ~1024-768, mobile <768)
+- Glassmorphism mixin
+- Animations (@keyframes for spinner, orbs, typing cursor)
+
+Output format — give TWO complete files:
+
+1. Full index.html (semantic HTML5, meta tags for SEO, Open Graph, accessibility: alt, aria)
+2. Full css/style.css (well-commented, clean)
+
+Make it production-ready, beautiful, fast-loading, and impressive. Start generating now.

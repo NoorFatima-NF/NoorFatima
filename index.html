@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noor Fatima - Aspiring AI Engineer Portfolio</title>
+    <meta name="description" content="Portfolio of Noor Fatima, an aspiring AI Engineer specializing in Python, Data Science, and Machine Learning.">
+    <meta name="keywords" content="AI Engineer, Python Developer, Data Science, Machine Learning, Portfolio">
+    <meta name="author" content="Noor Fatima">
+    <meta property="og:title" content="Noor Fatima - Aspiring AI Engineer Portfolio">
+    <meta property="og:description" content="Explore the portfolio of Noor Fatima, showcasing skills in AI, Python, and data science projects.">
+    <meta property="og:image" content="img/MyPhoto.jpeg">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="img/image.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Loading Spinner -->
+    <div id="loader" class="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="nav" class="nav">
+        <div class="nav-logo">
+            <span>NF</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero" data-tooltip="Home"><i class="fas fa-home"></i></a></li>
+            <li><a href="#about" data-tooltip="About"><i class="fas fa-user"></i></a></li>
+            <li><a href="#experience" data-tooltip="Experience"><i class="fas fa-briefcase"></i></a></li>
+            <li><a href="#skills" data-tooltip="Skills"><i class="fas fa-code"></i></a></li>
+            <li><a href="#projects" data-tooltip="Projects"><i class="fas fa-project-diagram"></i></a></li>
+            <li><a href="#education" data-tooltip="Education"><i class="fas fa-graduation-cap"></i></a></li>
+            <li><a href="#certifications" data-tooltip="Certifications"><i class="fas fa-certificate"></i></a></li>
+            <li><a href="#contact" data-tooltip="Contact"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+        <div class="nav-social">
+            <a href="https://www.linkedin.com/in/noor-fatima517a653a1" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:nf211805@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <div class="availability-badge">Available for Opportunities</div>
+                <h1 class="hero-name">
+                    <span class="gradient-text">Noor</span> Fatima
+                </h1>
+                <div class="typing-container">
+                    <span class="typing-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-bio">
+                    A hard-working and dedicated student seeking an opportunity to learn and grow in a professional environment. Currently pursuing an undergraduate degree in Artificial Intelligence with a focus on Python, Data Science, and NumPy.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="mailto:nf211805@gmail.com" class="btn btn-secondary">Let's Talk</a>
+                    <a href="Noor Fatima-Resume.pdf" download class="btn btn-outline">Download Resume</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="1">0</span>
+                        <span class="stat-label">Years Exp</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="3">0</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="3">0</span>
+                        <span class="stat-label">Certifications</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="100">0</span>
+                        <span class="stat-label">Freelance Success</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-glow">
+                    <img src="img/MyPhoto.jpeg" alt="Noor Fatima - Profile Photo" class="profile-photo">
+                </div>
+                <div class="floating-orb orb1"></div>
+                <div class="floating-orb orb2"></div>
+                <div class="floating-orb orb3"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I am a dedicated student pursuing a BS in Artificial Intelligence at SMI University, currently in my 5th semester. My passion lies in leveraging technology to solve real-world problems, particularly in the fields of data science and machine learning.
+                        </p>
+                        <p>
+                            With a strong foundation in Python, Pandas, and NumPy, I am eager to apply my skills in professional settings. My freelance experience in GMB post management has honed my attention to detail and ability to deliver timely results.
+                        </p>
+                    </div>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Karachi, Pakistan</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>nf211805@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn Profile</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience section">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Freelance | Remote Job (GMB Post Update)</h3>
+                            <span class="timeline-date">2025 (5 Months)</span>
+                            <p>Remote Job</p>
+                            <ul>
+                                <li>Updated and managed posts on Google My Business (GMB)</li>
+                                <li>Ensured accurate and timely content updates</li>
+                                <li>Improved visibility and engagement of business listings</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming & Data</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">NumPy</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Software Tools</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MS Word</span>
+                            <span class="skill-tag">MS Excel</span>
+                            <span class="skill-tag">PowerPoint</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Other Skills</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Typing Skills</span>
+                            <span class="skill-tag">GMB Post Management</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Urdu</span>
+                            <span class="skill-tag">English</span>
+                            <span class="skill-tag">Sindhi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="data-science">Data Science</button>
+                    <button class="filter-btn" data-filter="web-tools">Web Tools</button>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card" data-category="data-science">
+                        <div class="project-header">
+                            <h3>Python Data Analysis Script</h3>
+                            <span class="featured-badge">Featured</span>
+                        </div>
+                        <p>A comprehensive data analysis script using Python, Pandas, and NumPy to process and visualize datasets.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>NumPy</span>
+                        </div>
+                        <a href="#" class="project-link">View on GitHub</a>
+                    </div>
+                    <div class="project-card" data-category="web-tools">
+                        <h3>GMB Management Dashboard</h3>
+                        <p>A tool for managing Google My Business posts, ensuring timely updates and improved business visibility.</p>
+                        <div class="project-tech">
+                            <span>Web Technologies</span>
+                            <span>Management Tools</span>
+                        </div>
+                        <a href="#" class="project-link">Live Demo</a>
+                    </div>
+                    <div class="project-card" data-category="data-science">
+                        <h3>Machine Learning Model</h3>
+                        <p>An introductory machine learning project exploring predictive modeling with Python libraries.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Scikit-learn</span>
+                            <span>NumPy</span>
+                        </div>
+                        <a href="#" class="project-link">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education section">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="education-list">
+                    <div class="education-item">
+                        <h3>BS Artificial Intelligence</h3>
+                        <p>SMI University, Karachi</p>
+                        <span class="education-date">Expected 2027</span>
+                        <p>Semester 5 - Ongoing</p>
+                    </div>
+                    <div class="education-item">
+                        <h3>Higher Secondary School Certificate (HSSC) - Science</h3>
+                        <p>Guard's Public Higher Secondary School, Karachi</p>
+                        <span class="education-date">2023</span>
+                    </div>
+                    <div class="education-item">
+                        <h3>Secondary School Certificate (SSC) - Grade A</h3>
+                        <p>SMIU Model School, Karachi</p>
+                        <span class="education-date">2021</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications section">
+            <div class="container">
+                <h2 class="section-title">Certifications</h2>
+                <div class="certifications-grid">
+                    <div class="certification-card">
+                        <i class="fas fa-certificate"></i>
+                        <h3>Coursera Certificate</h3>
+                        <p>Successfully completed relevant online technical coursework.</p>
+                    </div>
+                    <div class="certification-card">
+                        <i class="fas fa-award"></i>
+                        <h3>Middle School Program Certificate</h3>
+                        <p>Academic excellence recognition.</p>
+                    </div>
+                    <div class="certification-card">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Freelance Experience Certificate</h3>
+                        <p>Successfully completed online remote job for 5 months.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2 class="section-title">Contact Me</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>nf211805@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Karachi, Pakistan</span>
+                        </div>
+                        <div class="contact-social">
+                            <a href="https://www.linkedin.com/in/noor-fatima517a653a1" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2026 Noor Fatima. All rights reserved.</p>
+                <a href="#hero" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        // JavaScript Code
+        document.addEventListener('DOMContentLoaded', function() {
+            // Hide loader
+            const loader = document.getElementById('loader');
+            loader.style.display = 'none';
+
+            // Typing effect
+            const typingText = document.querySelector('.typing-text');
+            const roles = ['Aspiring AI Engineer', 'Python Developer', 'Data Science Enthusiast', 'Machine Learning Student'];
+            let roleIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+
+            function typeWriter() {
+                const currentRole = roles[roleIndex];
+                if (isDeleting) {
+                    typingText.textContent = currentRole.substring(0, charIndex - 1);
+                    charIndex--;
+                } else {
+                    typingText.textContent = currentRole.substring(0, charIndex + 1);
+                    charIndex++;
+                }
+
+                if (!isDeleting && charIndex === currentRole.length) {
+                    isDeleting = true;
+                    setTimeout(typeWriter, 2000);
+                } else if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    roleIndex = (roleIndex + 1) % roles.length;
+                    setTimeout(typeWriter, 500);
+                } else {
+                    setTimeout(typeWriter, isDeleting ? 100 : 200);
+                }
+            }
+            typeWriter();
+
+            // Stat counters
+            const stats = document.querySelectorAll('.stat-number');
+            stats.forEach(stat => {
+                const target = parseInt(stat.getAttribute('data-target'));
+                let count = 0;
+                const increment = target / 100;
+                const timer = setInterval(() => {
+                    count += increment;
+                    if (count >= target) {
+                        stat.textContent = target;
+                        clearInterval(timer);
+                    } else {
+                        stat.textContent = Math.floor(count);
+                    }
+                }, 30);
+            });
+
+            // Scroll spy
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-links a');
+
+            function updateActiveLink() {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (pageYOffset >= sectionTop - sectionHeight / 3) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').substring(1) === current) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', updateActiveLink);
+
+            // Intersection Observer for scroll reveals
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('reveal');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.section').forEach(section => {
+                observer.observe(section);
+            });
+
+            // Project filter
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const filter = button.getAttribute('data-filter');
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+
+                    projectCards.forEach(card => {
+                        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Hamburger menu
+            const hamburger = document.getElementById('hamburger');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+            });
+
+            // Smooth scroll
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    // Close mobile menu
+                    hamburger.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                });
+            });
+
+            // Form validation
+            const contactForm = document.getElementById('contact-form');
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const message = document.getElementById('message').value.trim();
+
+                if (name === '' || email === '' || message === '') {
+                    alert('Please fill in all fields.');
+                    return;
+                }
+
+                if (!/\S+@\S+\.\S+/.test(email)) {
+                    alert('Please enter a valid email address.');
+                    return;
+                }
+
+                alert('Message sent successfully!');
+                contactForm.reset();
+            });
+        });
+    </script>
+</body>
+</html>
