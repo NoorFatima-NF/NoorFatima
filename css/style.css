@@ -1083,56 +1083,60 @@ main {
     }
 
     main {
-        margin-left: 0;
-        margin-top: 70px;
+        margin-left: 70px;
+        margin-top: 0;
         padding-bottom: 3rem;
     }
 
     .hero {
-        min-height: calc(100vh - 70px);
-        flex-direction: column;
+        min-height: calc(100vh - 40px);
+        flex-direction: row;
         align-items: center;
-        text-align: center;
-        padding: 3.5rem 1rem 2rem;
-        justify-content: center;
+        text-align: left;
+        padding: 3rem 1.2rem;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1.3rem;
     }
 
     .hero-content {
-        max-width: 100%;
-        width: 100%;
+        max-width: 48%;
+        width: 48%;
+        text-align: left;
     }
 
     .hero-name {
-        font-size: 2.8rem;
+        font-size: 3.1rem;
     }
 
     .typing-text {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .hero-bio {
-        font-size: 1rem;
-        padding: 0 1rem;
+        font-size: 1.05rem;
+        padding-right: 0;
     }
 
     .hero-buttons {
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .hero-stats {
-        justify-content: center;
-        gap: 0.8rem;
-        margin-top: 0.5rem;
+        justify-content: flex-start;
+        gap: 1rem;
+        margin-top: 0.75rem;
     }
 
     .hero-image {
-        margin-top: 1rem;
+        width: 45%;
+        margin-top: 0;
         justify-content: center;
     }
 
     .profile-photo {
-        width: 200px;
-        height: 200px;
+        width: 280px;
+        height: 280px;
     }
 
     .about-content,
