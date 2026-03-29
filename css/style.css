@@ -1,22 +1,39 @@
 /* CSS Variables */
 :root {
-    --primary-bg: #0a0e17;
-    --secondary-bg: #111827;
-    --glass-bg: rgba(255, 255, 255, 0.05);
-    --glass-border: rgba(255, 255, 255, 0.1);
-    --text-primary: #ffffff;
-    --text-secondary: #9ca3af;
-    --accent-gradient: linear-gradient(90deg, #6366f1, #8b5cf6, #06b6d4);
-    --accent-color: #6366f1;
-    --hover-glow: rgba(99, 102, 241, 0.3);
+    --primary-bg: #040612;
+    --secondary-bg: #0e1426;
+    --glass-bg: rgba(30, 45, 90, 0.35);
+    --glass-border: rgba(130, 100, 255, 0.6);
+    --text-primary: #f1f7ff;
+    --text-secondary: #b7c2ff;
+    --accent-gradient: linear-gradient(120deg, #9856ff, #2ec4ff, #ff5ec9);
+    --accent-color: #78a8ff;
+    --hover-glow: rgba(68, 179, 255, 0.35);
+    --shadow-glow: 0 0 28px rgba(158, 108, 255, 0.45);
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
-    --spacing-md: 1.5rem;
+    --spacing-md: 1.4rem;
     --spacing-lg: 2rem;
     --spacing-xl: 3rem;
-    --border-radius: 12px;
+    --border-radius: 18px;
     --transition: all 0.3s ease;
 }
+
+body {
+    background: radial-gradient(circle at top right, #242c45 0%, var(--primary-bg) 45%, #040612 100%);
+    color: var(--text-primary);
+}
+
+a {
+    color: #a4c6ff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #ffc6ff;
+}
+
 
 /* Reset and Base Styles */
 * {
@@ -31,11 +48,22 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
-    background: var(--primary-bg);
+    background: radial-gradient(circle at top right, #242c45 0%, var(--primary-bg) 45%, #040612 100%);
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
+    letter-spacing: 0.4px;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    text-shadow: 0 0 16px rgba(160, 130, 255, 0.48);
+}
+
+.hero-name {
+    color: #fff;
+    text-shadow: 0 0 14px rgba(255, 110, 211, 0.75), 0 0 24px rgba(90, 180, 255, 0.5);
+}
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Outfit', sans-serif;
@@ -340,13 +368,16 @@ main {
 }
 
 .btn-primary {
-    background: var(--accent-gradient);
+    background: linear-gradient(120deg, #6f5cfa, #22c8ff);
     color: var(--text-primary);
+    border: 1px solid rgba(190, 160, 255, 0.5);
+    box-shadow: 0 8px 30px rgba(88, 159, 255, 0.32);
 }
 
 .btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px var(--hover-glow);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 12px 28px rgba(234, 109, 234, 0.45);
+    background: linear-gradient(120deg, #d66aff, #3dd8ff);
 }
 
 .btn-secondary {
@@ -401,7 +432,30 @@ main {
     justify-content: center;
     align-items: flex-start;
     position: relative;
-    margin-top: var(--spacing-md); /* Align with Noor Fatima heading */
+    margin-top: var(--spacing-md);
+}
+
+.profile-glow {
+    position: relative;
+    border-radius: 22px;
+    padding: 10px;
+    background: linear-gradient(45deg, #7458ff, #2cc1fe, #ff5ecc);
+    animation: glow 1.8s ease-in-out infinite alternate;
+    box-shadow: 0 0 20px rgba(117, 85, 255, 0.35), 0 0 40px rgba(46, 195, 255, 0.3);
+}
+
+.profile-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 22px;
+    object-fit: cover;
+    border: 5px solid rgba(20, 26, 49, 0.94);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+    filter: brightness(1.05);
 }
 
 .profile-glow {
