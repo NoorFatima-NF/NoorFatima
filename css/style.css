@@ -261,6 +261,7 @@ main {
     min-height: 100vh;
     display: flex;
     align-items: flex-start;
+    flex-direction: row-reverse;
     padding: var(--spacing-xl);
     position: relative;
     overflow: hidden;
