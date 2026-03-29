@@ -1,15 +1,15 @@
 /* CSS Variables */
 :root {
     --primary-bg: #040612;
-    --secondary-bg: #0e1426;
-    --glass-bg: rgba(30, 45, 90, 0.35);
-    --glass-border: rgba(130, 100, 255, 0.6);
-    --text-primary: #f1f7ff;
-    --text-secondary: #b7c2ff;
-    --accent-gradient: linear-gradient(120deg, #9856ff, #2ec4ff, #ff5ec9);
-    --accent-color: #78a8ff;
-    --hover-glow: rgba(68, 179, 255, 0.35);
-    --shadow-glow: 0 0 28px rgba(158, 108, 255, 0.45);
+    --secondary-bg: #0a1229;
+    --glass-bg: rgba(20, 34, 72, 0.52);
+    --glass-border: rgba(170, 110, 255, 0.6);
+    --text-primary: #f5faff;
+    --text-secondary: #c8d4ff;
+    --accent-gradient: linear-gradient(120deg, #8f56ff, #3bd0ff, #ff65d7);
+    --accent-color: #72ccff;
+    --hover-glow: rgba(95, 162, 255, 0.43);
+    --shadow-glow: 0 0 32px rgba(180, 120, 255, 0.65);
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 1.4rem;
@@ -48,12 +48,30 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
-    background: radial-gradient(circle at top right, #242c45 0%, var(--primary-bg) 45%, #040612 100%);
+    background: linear-gradient(165deg, #080f2c 0%, #0a112f 45%, #03050f 100%);
+    background-attachment: fixed;
     color: var(--text-primary);
-    line-height: 1.6;
+    line-height: 1.64;
     overflow-x: hidden;
     letter-spacing: 0.4px;
 }
+
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(circle at 20% 20%, rgba(108, 90, 255, 0.35) 0%, transparent 42%),
+                radial-gradient(circle at 80% 80%, rgba(28, 226, 255, 0.25) 0%, transparent 40%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+main,
+section {
+    position: relative;
+    z-index: 1;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
     text-shadow: 0 0 16px rgba(160, 130, 255, 0.48);
@@ -141,13 +159,23 @@ img {
     top: 0;
     height: 100vh;
     width: 80px;
-    background: var(--secondary-bg);
+    background: linear-gradient(180deg, rgba(36, 52, 99, 0.9), rgba(16, 23, 62, 0.97));
+    box-shadow: 2px 0 20px rgba(80, 105, 200, 0.35);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: var(--spacing-lg) 0;
     z-index: 1000;
     transition: var(--transition);
+}
+
+.nav-logo {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #f8fbff;
+    text-shadow: 0 0 14px rgba(150, 130, 255, 0.75);
 }
 
 .nav-logo {
