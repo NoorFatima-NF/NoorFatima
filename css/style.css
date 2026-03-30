@@ -142,7 +142,9 @@ img {
 }
 
 .nav-links,
-.nav-social {
+.nav-social,
+.hamburger,
+.mobile-menu {
     display: none !important;
 }
 
