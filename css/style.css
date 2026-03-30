@@ -20,33 +20,6 @@
 }
 
 body {
-    background: radial-gradient(circle at top right, #242c45 0%, var(--primary-bg) 45%, #040612 100%);
-    color: var(--text-primary);
-}
-
-a {
-    color: #a4c6ff;
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-a:hover {
-    color: #ffc6ff;
-}
-
-
-/* Reset and Base Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
     font-family: 'Inter', sans-serif;
     background: linear-gradient(165deg, #080f2c 0%, #0a112f 45%, #03050f 100%);
     background-attachment: fixed;
@@ -72,25 +45,14 @@ section {
     z-index: 1;
 }
 
-
-h1, h2, h3, h4, h5, h6 {
-    text-shadow: 0 0 16px rgba(160, 130, 255, 0.48);
-}
-
-.hero-name {
-    color: #fff;
-    text-shadow: 0 0 14px rgba(255, 110, 211, 0.75), 0 0 24px rgba(90, 180, 255, 0.5);
-}
-
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Outfit', sans-serif;
-    font-weight: 600;
-}
-
 a {
-    color: var(--text-primary);
+    color: #a4c6ff;
     text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #ffc6ff;
 }
 
 img {
@@ -171,14 +133,6 @@ img {
 
 .nav-logo {
     font-family: 'Outfit', sans-serif;
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #f8fbff;
-    text-shadow: 0 0 14px rgba(150, 130, 255, 0.75);
-}
-
-.nav-logo {
     font-size: 1.5rem;
     font-weight: 800;
     background: var(--accent-gradient);
@@ -484,31 +438,6 @@ main {
 .profile-photo:hover {
     transform: scale(1.05);
     filter: brightness(1.05);
-}
-
-.profile-glow {
-    position: relative;
-    border-radius: 20px;
-    padding: 10px;
-    background: var(--accent-gradient);
-    animation: glow 2s ease-in-out infinite alternate;
-}
-
-@keyframes glow {
-    from {
-        box-shadow: 0 0 20px var(--hover-glow);
-    }
-    to {
-        box-shadow: 0 0 40px var(--hover-glow), 0 0 60px var(--hover-glow);
-    }
-}
-
-.profile-photo {
-    width: 300px;
-    height: 300px;
-    border-radius: 16px;
-    object-fit: cover;
-    border: 5px solid var(--primary-bg);
 }
 
 .floating-orb {
@@ -1090,7 +1019,7 @@ main {
 
     .hero {
         min-height: calc(100vh - 40px);
-        flex-direction: row;
+        flex-direction: row-reverse;
         align-items: center;
         text-align: left;
         padding: 3rem 1.2rem;
@@ -1212,6 +1141,18 @@ main {
 
     .hero {
         padding-top: 120px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: none;
+    }
+
+    .hero-image {
+        width: 100%;
+        margin-top: var(--spacing-md);
     }
 
     .hero-name {
@@ -1219,6 +1160,18 @@ main {
     }
 
     .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-stats {
+        justify-content: center;
+    }
+
+    .profile-photo {
+        width: 200px;
+        height: 200px;
+    }
+}
         justify-content: center;
     }
 
