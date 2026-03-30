@@ -373,10 +373,14 @@
             }
             typeWriter();
 
-            // Stat counters
-            const stats = document.querySelectorAll('.stat-number');
+            // Stat counters (only hero stats, skip non-numeric values)
+            const stats = document.querySelectorAll('#hero .stat-number');
             stats.forEach(stat => {
-                const target = parseInt(stat.getAttribute('data-target'));
+                const target = parseInt(stat.getAttribute('data-target'), 10);
+                if (Number.isNaN(target)) {
+                    return;
+                }
+
                 let count = 0;
                 const increment = target / 100;
                 const timer = setInterval(() => {
