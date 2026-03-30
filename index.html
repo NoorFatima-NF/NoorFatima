@@ -27,27 +27,30 @@
 
     <!-- Navigation -->
     <nav id="nav" class="nav">
-        <div class="nav-logo">
-            <span>NF</span>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#hero" data-tooltip="Home"><i class="fas fa-home"></i></a></li>
-            <li><a href="#about" data-tooltip="About"><i class="fas fa-user"></i></a></li>
-            <li><a href="#experience" data-tooltip="Experience"><i class="fas fa-briefcase"></i></a></li>
-            <li><a href="#skills" data-tooltip="Skills"><i class="fas fa-code"></i></a></li>
-            <li><a href="#projects" data-tooltip="Projects"><i class="fas fa-project-diagram"></i></a></li>
-            <li><a href="#education" data-tooltip="Education"><i class="fas fa-graduation-cap"></i></a></li>
-            <li><a href="#certifications" data-tooltip="Certifications"><i class="fas fa-certificate"></i></a></li>
-            <li><a href="#contact" data-tooltip="Contact"><i class="fas fa-envelope"></i></a></li>
-        </ul>
-        <div class="nav-social">
-            <a href="https://www.linkedin.com/in/noor-fatima517a653a1" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:nf211805@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-        </div>
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>NF</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-social">
+                <a href="https://www.linkedin.com/in/noor-fatima517a653a1" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:nf211805@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/NoorFatima-NF" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
@@ -69,43 +72,53 @@
     <main>
         <!-- Hero Section -->
         <section id="hero" class="hero">
-            <div class="hero-image">
-                <div class="profile-glow">
-                    <img src="img/MyPhoto.jpeg" alt="Noor Fatima - Profile Photo" class="profile-photo">
-                </div>
-                <div class="floating-orb orb1"></div>
-                <div class="floating-orb orb2"></div>
-                <div class="floating-orb orb3"></div>
-            </div>
-            <div class="hero-content">
-                <div class="availability-badge">Available for Opportunities</div>
-                <h1 class="hero-name">
-                    <span class="gradient-text">Noor</span> Fatima
-                </h1>
-                <div class="typing-container">
-                    <span class="typing-text"></span>
-                    <span class="cursor">|</span>
-                </div>
-                <p class="hero-bio">
-                    A hard-working and dedicated student seeking an opportunity to learn and grow in a professional environment. Currently pursuing an undergraduate degree in Artificial Intelligence with a focus on Python, Data Science, and NumPy.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="mailto:nf211805@gmail.com" class="btn btn-secondary">Let's Talk</a>
-                    <a href="Noor Fatima-Resume.pdf" download class="btn btn-outline">Download Resume</a>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-number" data-target="1">0</span>
-                        <span class="stat-label">Years Exp</span>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-header">
+                        <h1 class="hero-name">Noor Fatima</h1>
+                        <div class="hero-title">
+                            <span class="typing-text"></span>
+                            <span class="cursor">|</span>
+                        </div>
+                        <div class="availability-badge">
+                            <i class="fas fa-circle"></i>
+                            Available for Opportunities
+                        </div>
                     </div>
-                    <div class="stat">
-                        <span class="stat-number" data-target="3">0</span>
-                        <span class="stat-label">Projects</span>
+
+                    <p class="hero-bio">
+                        A dedicated AI student at SMI University pursuing a BS in Artificial Intelligence.
+                        Passionate about leveraging technology to solve real-world problems through Python,
+                        Data Science, and Machine Learning. Currently in my 5th semester with hands-on experience
+                        in freelance GMB post management and academic projects.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="mailto:nf211805@gmail.com" class="btn btn-secondary">Let's Talk</a>
+                        <a href="Noor Fatima-Resume.pdf" download class="btn btn-outline">Download Resume</a>
                     </div>
-                    <div class="stat">
-                        <span class="stat-number" data-target="3">0</span>
-                        <span class="stat-label">Certifications</span>
+
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-target="1">0</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="3">0</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="3">0</span>
+                            <span class="stat-label">Certifications</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <img src="img/MyPhoto.jpeg" alt="Noor Fatima - Profile Photo" class="profile-photo">
+                        <div class="profile-glow"></div>
                     </div>
                 </div>
             </div>
@@ -118,24 +131,27 @@
                 <div class="about-content">
                     <div class="about-text">
                         <p>
-                            I am a dedicated student pursuing a BS in Artificial Intelligence at SMI University, currently in my 5th semester. My passion lies in leveraging technology to solve real-world problems, particularly in the fields of data science and machine learning.
+                            Hello! I'm Noor Fatima, a passionate AI student at SMI University currently in my 5th semester pursuing a BS in Artificial Intelligence. My journey in technology began with a curiosity about how machines can learn and solve complex problems.
                         </p>
                         <p>
-                            With a strong foundation in Python, Pandas, and NumPy, I am eager to apply my skills in professional settings. My recent GMB post management project experience has strengthened my attention to detail and ability to deliver consistent results.
+                            I specialize in Python programming with strong foundations in data science libraries like Pandas and NumPy. My academic projects have given me hands-on experience in machine learning algorithms and data analysis. Recently, I gained practical experience through a freelance GMB post management project, where I learned the importance of attention to detail and consistent delivery.
+                        </p>
+                        <p>
+                            I'm eager to apply my technical skills in professional environments and contribute to innovative AI solutions that make a real-world impact. When I'm not coding, you can find me exploring new technologies or working on personal projects to expand my knowledge.
                         </p>
                     </div>
-                    <div class="info-grid">
-                        <div class="info-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Karachi, Pakistan</span>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">5th</div>
+                            <div class="stat-label">Semester</div>
                         </div>
-                        <div class="info-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>nf211805@gmail.com</span>
+                        <div class="stat-card">
+                            <div class="stat-number">AI</div>
+                            <div class="stat-label">Specialization</div>
                         </div>
-                        <div class="info-item">
-                            <i class="fab fa-linkedin"></i>
-                            <span>LinkedIn Profile</span>
+                        <div class="stat-card">
+                            <div class="stat-number">Python</div>
+                            <div class="stat-label">Expertise</div>
                         </div>
                     </div>
                 </div>
@@ -146,17 +162,23 @@
         <section id="experience" class="experience section">
             <div class="container">
                 <h2 class="section-title">Experience</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>GMB Post Update | Remote Job</h3>
-                            <span class="timeline-date">2025 (5 Months)</span>
-                            <p>Remote Job</p>
-                            <ul>
-                                <li>Updated and managed posts on Google My Business (GMB)</li>
-                                <li>Ensured accurate and timely content updates</li>
-                                <li>Improved visibility and engagement of business listings</li>
-                            </ul>
+                <div class="experience-grid">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <h3>GMB Post Management</h3>
+                            <span class="experience-period">2025 (5 Months)</span>
+                        </div>
+                        <div class="experience-company">Remote Freelance Project</div>
+                        <ul class="experience-responsibilities">
+                            <li>Managed and updated Google My Business posts for client listings</li>
+                            <li>Ensured timely and accurate content updates across multiple business profiles</li>
+                            <li>Improved online visibility and engagement through consistent post management</li>
+                            <li>Collaborated remotely to meet client requirements and deadlines</li>
+                        </ul>
+                        <div class="experience-skills">
+                            <span class="skill-badge">Content Management</span>
+                            <span class="skill-badge">Google My Business</span>
+                            <span class="skill-badge">Remote Work</span>
                         </div>
                     </div>
                 </div>
@@ -166,37 +188,86 @@
         <!-- Skills Section -->
         <section id="skills" class="skills section">
             <div class="container">
-                <h2 class="section-title">Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Programming & Data</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">Pandas</span>
-                            <span class="skill-tag">NumPy</span>
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="skills-content">
+                    <div class="skills-main">
+                        <div class="skill-group">
+                            <h3>Programming Languages</h3>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <span class="skill-name">Python</span>
+                                    <div class="skill-level">
+                                        <div class="skill-bar" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <h3>Data Science Libraries</h3>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <span class="skill-name">Pandas</span>
+                                    <div class="skill-level">
+                                        <div class="skill-bar" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">NumPy</span>
+                                    <div class="skill-level">
+                                        <div class="skill-bar" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <h3>Tools & Software</h3>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <span class="skill-name">MS Office Suite</span>
+                                    <div class="skill-level">
+                                        <div class="skill-bar" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Google Workspace</span>
+                                    <div class="skill-level">
+                                        <div class="skill-bar" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="skill-category">
-                        <h3>Software Tools</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">MS Word</span>
-                            <span class="skill-tag">MS Excel</span>
-                            <span class="skill-tag">PowerPoint</span>
+
+                    <div class="skills-additional">
+                        <div class="additional-skills">
+                            <h4>Additional Skills</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Data Analysis</span>
+                                <span class="skill-tag">GMB Management</span>
+                                <span class="skill-tag">Content Creation</span>
+                                <span class="skill-tag">Problem Solving</span>
+                                <span class="skill-tag">Team Collaboration</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Other Skills</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Typing Skills</span>
-                            <span class="skill-tag">GMB Post Management</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Languages</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Urdu</span>
-                            <span class="skill-tag">English</span>
-                            <span class="skill-tag">Sindhi</span>
+
+                        <div class="languages">
+                            <h4>Languages</h4>
+                            <div class="language-list">
+                                <div class="language-item">
+                                    <span class="language-name">English</span>
+                                    <span class="language-level">Fluent</span>
+                                </div>
+                                <div class="language-item">
+                                    <span class="language-name">Urdu</span>
+                                    <span class="language-level">Native</span>
+                                </div>
+                                <div class="language-item">
+                                    <span class="language-name">Sindhi</span>
+                                    <span class="language-level">Native</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
