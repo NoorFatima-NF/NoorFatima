@@ -1130,22 +1130,43 @@ main {
 @media (max-width: 768px) {
     main {
         margin-left: 0;
-        margin-top: 80px;
+        margin-top: 76px;
     }
 
     .nav {
         width: 100%;
-        height: auto;
+        height: 76px;
         position: fixed;
         top: 0;
         left: 0;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 0.75rem 1rem;
+        padding: 0 1rem;
         z-index: 1001;
-        background: rgba(5, 10, 35, 0.93);
+        background: rgba(5, 10, 35, 0.96);
         backdrop-filter: blur(8px);
+        border-bottom: 1px solid rgba(120, 150, 255, 0.25);
+    }
+
+    .nav-links,
+    .nav-social {
+        display: none;
+    }
+
+    .nav-logo {
+        font-size: 1.4rem;
+        margin: 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hero {
+        padding-top: 1rem;
+        flex-direction: column;
+        text-align: center;
     }
 
     .nav-links {
