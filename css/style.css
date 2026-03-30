@@ -141,6 +141,11 @@ img {
     margin-bottom: var(--spacing-xl);
 }
 
+.nav-links,
+.nav-social {
+    display: none !important;
+}
+
 .nav-links {
     list-style: none;
     flex-grow: 1;
