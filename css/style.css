@@ -155,10 +155,15 @@ main {
 .hero-wrapper {
     max-width: 1200px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 3rem;
     align-items: center;
     width: 100%;
+    text-align: center;
+}
+
+.hero-image {
+    display: none;
 }
 
 .hero-image {
@@ -187,6 +192,7 @@ main {
     font-weight: 800;
     margin-bottom: 0.5rem;
     line-height: 1.1;
+    text-align: center;
 }
 
 .hero-subtitle {
